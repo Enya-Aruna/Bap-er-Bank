@@ -14,11 +14,42 @@
     </header>
 
     <section>
-        <div class="grid grid-cols-3 gap-4">
-
+        <div class="grid grid-cols-3 lg:gap-8 gap-2 mt-8 lg:m-16 my-4 ">
+            <div class="lg:p-12 p-4 bg-pink-300 text-white rounded-lg">
+                <p>Deposit</p>
+                <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="lg:p-12 p-4  bg-violet-600 text-white rounded-lg">
+                <p>Withdraw</p>
+                <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="lg:p-12 py-4  bg-green-500 text-white rounded-lg">
+                <p>Balance</p>
+                <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
+            </div>
+        </div>
+    </section>
+    <!-- diposit & Withdraw -->
+    <section>
+        <div class="grid grid-cols-2 gap-12 mt-12 lg:m-24">
+            <div class="lg:p-12 p-4 bg-purple-600  rounded-lg">
+                <h1 class="text-2xl text-white">Please Deposit</h1>
+               
+                <input class="w-9/12 p-2 mt-2 block" type="email" name="" id="deposit-input" placeholder="$ Amount you want to deposit">
+                <button id="deposit" class="bg-pink-300 px-8 py-2 mt-2 rounded-lg text-white font-semibold  hover:bg-yellow-200">Deposit</button>
+                
+            </div>
+            <div class="lg:p-12 p-4 bg-gray-600  rounded-lg">
+                <h1 class="text-2xl text-white">Please Deposit</h1>
+                
+                <input class="w-9/12 p-2 mt-2 block" type="email" name="" id="withdrow-input" placeholder="$ Amount you want to Withdrow">
+                <button id="withdrow" class="bg-pink-300 px-8 py-2 mt-2 rounded-lg text-white font-semibold  hover:bg-yellow-200">Withdrow</button>
+            </div>
+            
         </div>
     </section>
 
-    <script src="js/login.js"></script>
+    <script src="js/diposit.js"></script>
+    <script src="js/withdrow.js"></script>
 </body>
 </html>
